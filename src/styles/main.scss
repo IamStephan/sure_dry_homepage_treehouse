@@ -2,6 +2,24 @@
 
 @import "./colors.vars.scss";
 @import "./dimensions.vars.scss";
+@import "./spacing.vars.scss";
+@import "./borders.vars.scss";
+
+// Components
+.button {
+  // display: inline-block;
+  background-color: $primary;
+  padding: #{$spacing-2-5}px #{$spacing-4}px;
+  border-radius: #{$border-radius}px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    background-color: darken($primary, 3%);
+  }
+}
 
 // Navigation
 nav {
