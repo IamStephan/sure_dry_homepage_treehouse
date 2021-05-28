@@ -1,3 +1,12 @@
+.services-card-layout {
+  $desktop-offset-vertical-padding: 64;
+  $desktop-offset-horizontal-padding: 50;
+
+  display: grid;
+  grid-template-columns: #{$desktop-offset-horizontal-padding}px auto 1fr;
+  grid-template-rows: #{$desktop-offset-vertical-padding}px auto #{$desktop-offset-vertical-padding}px;
+}
+
 .features-section-top-card-layout {
   $screen-xl: 1500;
 
