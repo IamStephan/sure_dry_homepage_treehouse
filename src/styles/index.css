@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .max-w-screen-sm {
+    max-width: 640px;
+  }
+
+  .max-w-screen-md {
+    max-width: 768px;
+  }
+
+  .max-w-screen-lg {
+    max-width: 1024px;
+  }
+
+  .max-w-screen-xl {
+    max-width: 1280px;
+  }
+
+  .max-w-screen-2xl {
+    max-width: 1536px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  /* Reset base font */
+  font-family: "Montserrat", sans-serif;
+}
