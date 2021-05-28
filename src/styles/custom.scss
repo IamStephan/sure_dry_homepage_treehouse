@@ -1,0 +1,13 @@
+.features-section-top-card-layout {
+  $screen-xl: 1500;
+
+  display: grid;
+  grid-template-columns: auto #{$screen-xl}px auto;
+  grid-template-rows: 1fr 1fr;
+}
+
+.features-section-top-card-inner-layout {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 1fr auto;
+}
