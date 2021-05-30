@@ -1,3 +1,22 @@
+@use 'sass:math';
+
+@import "./breakpoints.vars.scss";
+
+@function calculateFractionWidth($fration: 1, $width) {
+  @return #{$width * $fration}px;
+}
+
+.hero-section-layout {
+  display: grid;
+  grid-template-columns:
+    1fr calculateFractionWidth(0.45, $screen-2xl) calculateFractionWidth(
+      0.55,
+      $screen-2xl
+    )
+    1fr;
+  grid-template-rows: auto 1fr 1fr;
+}
+
 .services-card-layout {
   $desktop-offset-vertical-padding: 64;
   $desktop-offset-horizontal-padding: 50;
