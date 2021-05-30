@@ -37,11 +37,60 @@
         - Ignore the actual navbar and try to use placeholders where it makes sense
     -->
     <nav>
-      <!-- Top navigation banner -->
-      <section></section>
+      <!-- Top navigation -->
+      <section class="navigation-layout">
+        <!-- BG for banner -->
+        <div
+          class="col-start-3 col-end-5 row-start-1 row-end-2 bg-[#272526]"
+        ></div>
+        <div
+          class="
+            navigation-start-triangle
+            col-start-3 col-end-4
+            row-start-1 row-end-2
+            bg-[#272526]
+            flex
+            items-center
+            text-white
+            gap-x-4
+            px-4
+          "
+        >
+          <div><b>Open Now</b> <i>(closing at 6pm)</i></div>
+          <!-- This coul be a border or a character -->
+          <div>|</div>
+          <div class="mr-12">Yes, we serve <b>Seymour</b></div>
+          <div class="px-6 py-2 bg-primary">
+            <span class="text-lg font-semibold">1-800-379-3788</span>
+          </div>
+        </div>
 
-      <!-- Generated navigation links -->
-      <section></section>
+        <div class="col-start-3 col-end-4 row-start-2 row-end-3 py-8">
+          <ul class="flex justify-between font-semibold">
+            <li>
+              <a>Services</a>
+            </li>
+            <li>
+              <a>Our Work</a>
+            </li>
+            <li>
+              <a>About Us</a>
+            </li>
+            <li>
+              <a>Service Area</a>
+            </li>
+            <li>
+              <a>Free Estimate</a>
+            </li>
+          </ul>
+        </div>
+        <div class="relative col-start-2 col-end-3 row-start-1 row-end-3 my-8">
+          <img
+            class="absolute top-0 left-0 object-contain object-left w-full h-full "
+            src="./assets/image/logo.png"
+          />
+        </div>
+      </section>
     </nav>
 
     <main>
