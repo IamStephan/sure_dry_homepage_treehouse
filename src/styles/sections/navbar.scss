@@ -1,0 +1,108 @@
+@import "../utils/index.scss";
+@import "../breakpoints.vars.scss";
+
+.navigation-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(theme("spacing.8"), auto) minmax(
+      calculateFractionWidth(0.45, $screen-lg),
+      calculateFractionWidth(0.45, $screen-2xl)
+    )
+    minmax(
+      calculateFractionWidth(0.55, $screen-lg),
+      calculateFractionWidth(0.55, $screen-2xl)
+    )
+    minmax(theme("spacing.8"), auto);
+  grid-template-rows: auto auto;
+
+  @screen xl {
+    grid-template-columns:
+      minmax(theme("spacing.8"), auto)
+      4fr
+      5fr
+      // this translates to 44fr and 55fr respectively
+      minmax(theme("spacing.8"), auto);
+  }
+
+  .banner {
+    @apply col-start-3 col-end-5 row-start-1 row-end-2 xl:col-start-1 xl:col-end-5;
+    background-color: #272526;
+  }
+
+  .banner-text {
+    @apply col-start-3 col-end-4 row-start-1 row-end-2 xl:col-start-2
+    xl:col-end-5 md:col-start-1 sm:pl-4 flex items-center xl:justify-end
+    lg:justify-center sm:justify-between 2xl:text-xs text-white pl-4 md:pl-0;
+
+    background-color: #272526;
+
+    &.navigation-start-triangle {
+      position: relative;
+
+      &::before {
+        $triangle-slope: 150;
+        content: "";
+        bottom: 0px;
+        left: #{-$triangle-slope}px;
+        position: absolute;
+        width: #{$triangle-slope}px;
+        height: 100%;
+        background-color: #272526;
+        transform-origin: bottom right;
+        transform: rotate(45deg);
+        z-index: -5;
+      }
+    }
+
+    .separator {
+      @apply px-4 sm:px-1;
+    }
+
+    .serving {
+      @apply mr-12 sm:mr-2;
+    }
+
+    .cta {
+      @apply px-5 py-2 bg-primary;
+
+      .cta-text {
+        @apply text-lg font-semibold 2xl:text-sm sm:hidden;
+      }
+
+      .cta-text-small {
+        @apply hidden sm:flex font-bold items-center;
+
+        img {
+          @apply mr-2 w-4;
+        }
+      }
+    }
+
+    .closing-at {
+      @apply sm:hidden;
+    }
+  }
+
+  .logo-container {
+    @apply relative col-start-2 col-end-3 row-start-1 row-end-3 my-8 xl:row-start-2 xl:row-end-3 xl:my-5;
+  }
+
+  .links-container {
+    @apply col-start-3 col-end-4 row-start-2 row-end-3 py-8;
+
+    .links {
+      @apply flex justify-between font-semibold lg:text-xs md:hidden;
+
+      li {
+        margin-right: theme("spacing.2");
+      }
+    }
+
+    .menu-container {
+      @apply hidden md:flex justify-end;
+
+      .menu {
+      }
+    }
+  }
+}
