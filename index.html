@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/src/styles/index.css" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="/src/styles/custom.scss" />
+    <link rel="stylesheet" href="/src/styles/main.scss" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -40,33 +41,23 @@
       <!-- Top navigation -->
       <section class="navigation-layout">
         <!-- BG for banner -->
-        <div
-          class="col-start-3 col-end-5 row-start-1 row-end-2 bg-[#272526]"
-        ></div>
-        <div
-          class="
-            navigation-start-triangle
-            col-start-3 col-end-4
-            row-start-1 row-end-2
-            bg-[#272526]
-            flex
-            items-center
-            text-white
-            gap-x-4
-            px-4
-          "
-        >
-          <div><b>Open Now</b> <i>(closing at 6pm)</i></div>
-          <!-- This coul be a border or a character -->
-          <div>|</div>
-          <div class="mr-12">Yes, we serve <b>Seymour</b></div>
-          <div class="px-6 py-2 bg-primary">
-            <span class="text-lg font-semibold">1-800-379-3788</span>
+        <div class="banner"></div>
+        <div class="banner-text navigation-start-triangle">
+          <div><b>Open Now</b> <i class="closing-at">(closing at 6pm)</i></div>
+          <!-- This could be a border or a character -->
+          <div class="separator">|</div>
+          <div class="serving">Yes, we serve <b>Seymour</b></div>
+          <div class="cta">
+            <span class="cta-text"> 1-800-379-3788 </span>
+            <span class="cta-text-small">
+              <img src="./assets/svg/phone.svg" />
+              Call Now
+            </span>
           </div>
         </div>
 
-        <div class="col-start-3 col-end-4 row-start-2 row-end-3 py-8">
-          <ul class="flex justify-between font-semibold">
+        <div class="links-container">
+          <ul class="links">
             <li>
               <a>Services</a>
             </li>
@@ -83,10 +74,16 @@
               <a>Free Estimate</a>
             </li>
           </ul>
+          <div class="menu-container">
+            <button class="menu">
+              <img src="./assets/svg/menu.svg" />
+            </button>
+          </div>
         </div>
-        <div class="relative col-start-2 col-end-3 row-start-1 row-end-3 my-8">
+
+        <div class="logo-container">
           <img
-            class="absolute top-0 left-0 object-contain object-left w-full h-full "
+            class="object-contain object-left img"
             src="./assets/image/logo.png"
           />
         </div>
@@ -95,741 +92,203 @@
 
     <main>
       <!-- Hero Section -->
-      <section class="mb-28 hero-section-layout">
-        <div
-          class="relative col-start-1 col-end-5 row-start-1 row-end-2 bg-index"
-        >
+      <section class="hero-section-layout">
+        <div class="hero-bg">
           <img
-            class="absolute top-0 left-0 object-cover object-bottom w-full h-full "
+            class="object-cover object-bottom img"
             src="./assets/image/hero/hero-bg.jpg"
           />
         </div>
-        <div
-          class="col-start-1 col-end-5 row-start-2 row-end-4 bg-[#F5F5F5]"
-        ></div>
-        <div
-          class="col-start-2 col-end-3 row-start-2 row-end-4 py-14 opacity-30"
-        >
-          <p class="text-xl font-black">ACCREDITATION LOGOS COULD GO HERE</p>
+
+        <div class="logo-bg-container"></div>
+
+        <div class="logo-container">
+          <p class="text-placeholder">ACCREDITATION LOGOS COULD GO HERE</p>
         </div>
 
-        <div class="col-start-2 col-end-3 row-start-1 row-end-2 py-32">
-          <h1 class="mb-4 font-semibold leading-snug text-white text-7xl">
+        <div class="heading-main-text-container">
+          <h1 class="heading-main-text">
             Your Home.<br />
             Our Team.<br />
             <span class="font-black">One Solution.</span>
           </h1>
+        </div>
 
-          <div class="mb-16">
-            <p class="text-2xl font-medium text-white">
+        <div class="heading-sub-text-container">
+          <div class="mb-16 md:mb-6">
+            <p class="heading-sub-text">
               Foundation Repair <span class="font-bold">•</span> Basement
               Waterproofing
             </p>
-            <p class="text-2xl font-medium text-white">
+            <p class="heading-sub-text">
               Crawl Space Repair <span class="font-bold">•</span> Concrete
               Leveling
             </p>
           </div>
 
-          <div>
-            <a
-              class="inline-block px-6 py-3 mx-auto font-semibold text-white rounded-md cursor-pointer  bg-primary hover:opacity-90"
-            >
-              Get Your Free Estimate
-            </a>
+          <div class="button-container">
+            <a class="button"> Get Your Free Estimate </a>
           </div>
         </div>
-        <div
-          class="flex col-start-3 col-end-4 row-start-1 row-end-3 pt-32 gap-x-6"
-        >
-          <div class="flex flex-col flex-1 gap-y-6">
-            <div class="flex-grow-[2] relative">
+
+        <div class="images-container">
+          <div class="image-set-container">
+            <div class="image-one">
               <img
-                class="absolute top-0 left-0 object-cover w-full h-full"
+                class="object-cover img"
                 src="./assets/image/hero/man-1.png"
               />
             </div>
-            <div class="flex-grow-[1] relative">
+            <div class="image-two">
               <img
-                class="absolute top-0 left-0 object-cover w-full h-full"
+                class="object-cover img"
                 src="./assets/image/hero/man-2.png"
               />
             </div>
           </div>
-          <div class="flex flex-col flex-1 gap-y-6">
-            <div class="flex-grow-[1] relative">
+          <div class="image-set-container">
+            <div class="image-three">
               <img
-                class="absolute top-0 left-0 object-cover w-full h-full"
+                class="object-cover img"
                 src="./assets/image/hero/hands-1.png"
               />
             </div>
-            <div class="flex-grow-[2] relative">
+            <div class="image-four">
               <img
-                class="absolute top-0 left-0 object-cover w-full h-full"
+                class="object-cover img"
                 src="./assets/image/hero/hands-2.png"
               />
             </div>
           </div>
         </div>
       </section>
-
-      <!-- Services Section -->
-      <section class="mx-auto mb-28 max-w-screen-2xl">
-        <h2 class="text-5xl font-black text-center mb-14">Our Solutions</h2>
-
-        <div class="grid grid-cols-2 grid-rows-2 mb-14 gap-x-16 gap-y-16">
-          <div class="col-start-1 col-end-2 services-card-layout">
-            <div
-              class="relative col-start-2 col-end-4 row-start-1 row-end-4 bg-red-500 "
-            >
-              <img
-                class="absolute top-0 left-0 object-cover w-full h-full"
-                src="./assets/image/services/cracks.png"
-              />
-            </div>
-
-            <div
-              class="
-                max-w-[330px]
-                col-start-1 col-end-3
-                row-start-2
-                z-10
-                shadow-2xl
-              "
-            >
-              <div class="bg-[#231F20] py-4 px-8">
-                <h3 class="text-xl font-semibold text-white">
-                  Cracked Foundation?
-                </h3>
-              </div>
-              <div class="bg-[#4A4A4A] py-4 px-8">
-                <h4 class="mb-2 font-semibold text-white">Foundation Repair</h4>
-                <p class="text-sm text-white">
-                  We have permanent solutions for your foundation problems.
-                </p>
-              </div>
-              <div
-                class="bg-[#4A4A4A] hover:bg-primary cursor-pointer py-3 px-8"
-              >
-                <a class="text-sm font-semibold text-white">LEARN MORE</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-start-2 col-end-3 services-card-layout">
-            <div
-              class="relative col-start-2 col-end-4 row-start-1 row-end-4 bg-red-500 "
-            >
-              <img
-                class="absolute top-0 left-0 object-cover w-full h-full"
-                src="./assets/image/services/wet_basement.png"
-              />
-            </div>
-
-            <div
-              class="
-                max-w-[330px]
-                col-start-1 col-end-3
-                row-start-2
-                z-10
-                shadow-2xl
-              "
-            >
-              <div class="bg-[#231F20] py-4 px-8">
-                <h3 class="text-xl font-semibold text-white">Wet Basement?</h3>
-              </div>
-              <div class="bg-[#4A4A4A] py-4 px-8">
-                <h4 class="mb-2 font-semibold text-white">
-                  Basement Waterproofing
-                </h4>
-                <p class="text-sm text-white">
-                  We have lasting solutions for waterproofing your basement.
-                </p>
-              </div>
-              <div
-                class="bg-[#4A4A4A] hover:bg-primary cursor-pointer py-3 px-8"
-              >
-                <a class="text-sm font-semibold text-white">LEARN MORE</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-start-1 col-end-2 row-start-2 services-card-layout">
-            <div
-              class="relative col-start-2 col-end-4 row-start-1 row-end-4 bg-red-500 "
-            >
-              <img
-                class="absolute top-0 left-0 object-cover w-full h-full"
-                src="./assets/image/services/cracks.png"
-              />
-            </div>
-
-            <div
-              class="
-                max-w-[330px]
-                col-start-1 col-end-3
-                row-start-2
-                z-10
-                shadow-2xl
-              "
-            >
-              <div class="bg-[#231F20] py-4 px-8">
-                <h3 class="text-xl font-semibold text-white">
-                  Nasty Crawl Space?
-                </h3>
-              </div>
-              <div class="bg-[#4A4A4A] py-4 px-8">
-                <h4 class="mb-2 font-semibold text-white">
-                  Crawl Space Repair
-                </h4>
-                <p class="text-sm text-white">
-                  Create a healthier living space and save money on your utility
-                  bills.
-                </p>
-              </div>
-              <div
-                class="bg-[#4A4A4A] hover:bg-primary cursor-pointer py-3 px-8"
-              >
-                <a class="text-sm font-semibold text-white">LEARN MORE</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-start-2 col-end-3 row-start-2 services-card-layout">
-            <div
-              class="relative col-start-2 col-end-4 row-start-1 row-end-4 bg-red-500 "
-            >
-              <img
-                class="absolute top-0 left-0 object-cover w-full h-full"
-                src="./assets/image/services/sinking_concrete.png"
-              />
-            </div>
-
-            <div
-              class="
-                max-w-[330px]
-                col-start-1 col-end-3
-                row-start-2
-                z-10
-                shadow-2xl
-              "
-            >
-              <div class="bg-[#231F20] py-4 px-8">
-                <h3 class="text-xl font-semibold text-white">
-                  Sinking Concrete?
-                </h3>
-              </div>
-              <div class="bg-[#4A4A4A] py-4 px-8">
-                <h4 class="mb-2 font-semibold text-white">Concrete Leveling</h4>
-                <p class="text-sm text-white">
-                  Is there sinking concrete near your home? Call for a free
-                  estimate!
-                </p>
-              </div>
-              <div
-                class="bg-[#4A4A4A] hover:bg-primary cursor-pointer py-3 px-8"
-              >
-                <a class="text-sm font-semibold text-white">LEARN MORE</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="
-            border-solid border border-[#231F20]
-            max-w-screen-md
-            mx-auto
-            bg-[#F5F5F5]
-            shadow-2xl
-            py-7
-            px-20
-            flex
-            items-center
-          "
-        >
-          <div class="w-[90px] mr-12">
-            <img src="./assets/svg/money.svg" />
-          </div>
-          <div>
-            <h3 class="mb-2 text-2xl font-bold text-primary">
-              Financing Available
-            </h3>
-            <p class="text-lg">
-              From waterproofing to finishing, we offer financing options for
-              practically any job.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Social Proof Section -->
-      <section class="relative mb-28">
-        <div>
-          <img
-            src="./assets/image/social_proof/people.jpg"
-            class="absolute top-0 z-[-2] left-0 object-cover w-full h-full"
-          />
-          <div
-            class="
-              absolute
-              z-[-1]
-              top-0
-              left-0
-              w-full
-              h-full
-              bg-[#4A4A4A] bg-opacity-[0.85]
-            "
-          ></div>
-        </div>
-
-        <div class="py-32">
-          <h2 class="mb-10 text-3xl font-semibold text-center text-white">
-            Trusted by Homeowners Like You
-          </h2>
-          <div class="flex px-16 overflow-x-hidden flex-nowrap gap-x-24">
-            <div class="flex flex-col items-end flex-shrink-0 w-[600px]">
-              <div class="z-10 self-stretch px-12 py-8 bg-white">
-                <div class="flex mb-6">
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                </div>
-                <p class="mb-2 text-lg">
-                  Customer review content goes here. Customer review content
-                  goes here.
-                </p>
-                <p class="text-sm text-[#838383]">Customer A.</p>
-              </div>
-              <!-- Triangle -->
-              <div class="testimonial-card-triangle"></div>
-            </div>
-
-            <div class="flex flex-col items-end flex-shrink-0 w-[600px]">
-              <div class="z-10 self-stretch px-12 py-8 bg-white">
-                <div class="flex mb-6">
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                </div>
-                <p class="mb-2 text-lg">
-                  Customer review content goes here. Customer review content
-                  goes here.
-                </p>
-                <p class="text-sm text-[#838383]">Customer A.</p>
-              </div>
-              <!-- Triangle -->
-              <div class="testimonial-card-triangle"></div>
-            </div>
-
-            <div class="flex flex-col items-end flex-shrink-0 w-[600px]">
-              <div class="z-10 self-stretch px-12 py-8 bg-white">
-                <div class="flex mb-6">
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                  <img
-                    class="object-contain w-8 h-8 mr-3"
-                    src="./assets/svg/star.svg"
-                  />
-                </div>
-                <p class="mb-2 text-lg">
-                  Customer review content goes here. Customer review content
-                  goes here.
-                </p>
-                <p class="text-sm text-[#838383]">Customer A.</p>
-              </div>
-              <!-- Triangle -->
-              <div class="testimonial-card-triangle"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Features Section -->
-      <section class="bg-[#F5F5F5] mb-28">
-        <div
-          class="items-stretch mb-16  features-section-top-card-layout justify-items-stretch"
-        >
-          <div class="col-start-1 col-end-4 row-start-1 bg-white"></div>
-          <div class="col-start-1 col-end-4 row-start-2"></div>
-          <div
-            class="
-              bg-[#231F20]
-              shadow-2xl
-              row-start-1 row-end-3
-              col-start-2 col-end-3
-              features-section-top-card-inner-layout
-            "
-          >
-            <div class="relative col-start-1 row-start-1 row-end-3">
-              <img
-                class="absolute top-0 left-0 w-full h-full"
-                src="./assets/noise.png"
-              />
-            </div>
-
-            <div class="relative col-start-2 row-start-1 row-end-3">
-              <img
-                class="absolute top-0 left-0 w-full h-full"
-                src="./assets/company-people.png"
-              />
-            </div>
-
-            <div class="z-10 col-start-1 row-start-1 py-20 px-11">
-              <h2 class="mb-5 text-3xl font-bold text-white">
-                Why Homeowners Choose Us
-              </h2>
-              <p class="text-xl text-white">
-                We believe the customer experience can and should be remarkable.
-                Our goal is to provide you with the most reliable solutions and
-                peace of mind about your home. At the time of your free
-                inspection, you will know exactly what the problem is, exactly
-                how we will fix it and exactly how much it will cost.
-              </p>
-            </div>
-
-            <div
-              class="
-                row-start-2
-                col-start-1
-                px-11
-                py-4
-                text-white
-                bg-[#231F20]
-                z-10
-              "
-            >
-              <a class="text-sm font-semibold"> LEARN ABOUT OUR COMPANY </a>
-            </div>
-          </div>
-        </div>
-        <div class="max-w-screen-xl mx-auto mb-16">
-          <p class="text-2xl font-light leading-loose">
-            Our friends and neighbors in Northeast and Central Wisconsin choose
-            Sure-Dry because they expect a permanent fix that will protect their
-            home and everything in it. You can expect the same thing because
-            protecting homes and what’s on the inside is job one for us and a
-            responsibility we take seriously. Our basement waterproofing,
-            foundation repair, and concrete lifting systems have helped
-            thousands of homeowners, and they can help you too. Call Sure-Dry
-            today!
-          </p>
-        </div>
-        <div
-          class="grid grid-cols-4 mx-auto max-w-screen-2xl justify-items-center"
-        >
-          <div class="max-w-[280px]">
-            <img class="h-16 mb-7" src="./assets/svg/flag.svg" />
-            <h3 class="mb-2 text-2xl font-bold">Industry Leaders</h3>
-            <h4 class="text-xl">Exclusive patented, proven products</h4>
-          </div>
-          <div class="max-w-[280px]">
-            <img class="h-16 mb-7" src="./assets/svg/tools.svg" />
-            <h3 class="mb-2 text-2xl font-bold">Reliable Service</h3>
-            <h4 class="text-xl">
-              Transferable warranties for waterproofing systems
-            </h4>
-          </div>
-          <div class="max-w-[280px]">
-            <img class="h-16 mb-7" src="./assets/svg/hands.svg" />
-            <h3 class="mb-2 text-2xl font-bold">Trustworthy Crew</h3>
-            <h4 class="text-xl">Trained, experienced contractors</h4>
-          </div>
-          <div class="max-w-[280px]">
-            <img class="h-16 mb-7" src="./assets/svg/face.svg" />
-            <h3 class="mb-2 text-2xl font-bold">Customer Support</h3>
-            <h4 class="text-xl">Savings of up to 50% over other methods</h4>
-          </div>
-          <div class="mb-24" />
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section class="mx-8 mb-28">
-        <h2 class="mb-6 text-5xl font-bold text-center text-primary">
-          Exceptional Quality and Service Since 1994
-        </h2>
-        <h3
-          class="max-w-screen-lg mx-auto mb-6 text-3xl font-medium text-center text-gray-800 uppercase "
-        >
-          OVER 25,000 SATISFIED SURE-DRY CUSTOMERS IN NORTHEAST AND CENTRAL
-          WISCONSIN
-        </h3>
-        <p
-          class="max-w-screen-xl mx-auto mb-6 text-xl leading-normal text-gray-600 "
-        >
-          Sure-Dry has secured its position as the largest and most trusted
-          basement waterproofing and foundation repair contractor in Northeast
-          and Central Wisconsin. With access to more than 30 patented products,
-          comprehensive training, and support through international
-          organizations, we help set and redefine the standards for the industry
-          and your home.
-        </p>
-
-        <p
-          class="max-w-screen-xl mx-auto mb-6 text-xl leading-normal text-gray-600 "
-        >
-          The feel and function of a home shouldn’t be compromised by a flooded
-          basement, cracked or bowing walls, musty crawl space, or sinking
-          concrete. Our goal is to provide homeowners with the most reliable
-          solutions to those issues and peace of mind knowing the job will be
-          done right.
-        </p>
-
-        <p class="max-w-screen-xl mx-auto text-xl leading-normal text-gray-600">
-          Whether you live in Green Bay, Fox Cities, Oshkosh, Wausau, the
-          Lakeshore or up in Hodag country, we can help! If you need basement
-          waterproofing, foundation repair, crawl space repair, concrete
-          lifting, and leveling, please contact us today for your
-          <b>FREE ESTIMATE</b>.
-        </p>
-
-        <div class="flex justify-center mt-10">
-          <a
-            class="inline-block px-6 py-3 mx-auto font-semibold text-white rounded-md cursor-pointer  bg-primary hover:opacity-90"
-          >
-            Get Your Free Estimate
-          </a>
-        </div>
-      </section>
-
-      <!-- Contact/More info Section -->
-      <section class="contact-more-section-layout gap-y-10 gap-x-24">
-        <div class="relative col-start-1 col-end-3 row-start-1 row-end-3 z-[5]">
-          <img
-            class="absolute top-0 left-0 object-cover w-full h-full"
-            src="./assets/image/contact_more/map.png"
-          />
-        </div>
-
-        <div class="relative col-start-2 col-end-5 row-start-1 row-end-3">
-          <img
-            class="absolute top-0 left-0 w-full h-full brightness-[0.85] filter"
-            src="./assets/noise.png"
-          />
-        </div>
-
-        <div
-          class="z-10 max-w-4xl col-start-3 col-end-5 row-start-1 row-end-2  mt-28"
-        >
-          <h2 class="text-4xl font-black text-white">
-            Proudly serving Central & Northeast Wisconsin - Green Bay, Oshkosh,
-            Appleton, Wausau
-          </h2>
-        </div>
-
-        <div
-          class="z-10 max-w-3xl col-start-3 col-end-5 row-start-2 row-end-3  mb-28"
-        >
-          <h3 class="mb-2 text-2xl font-bold text-white">Wisconsin</h3>
-          <p class="text-lg leading-relaxed text-white">
-            Adell Algoma Baileys Harbor Belgium Brussels Cascade Casco Cedar
-            Grove Cleveland Denmark Egg Harbor Elkhart Lake Ellison Bay Fish
-            Creek Forestville Francis Creek Fredonia Kellnersville Kewaunee Kiel
-            Kohler Luxemburg Manitowoc Maribel Marinette Mishicot New Franken
-            Newton Oostburg Plymouth Port Washington Random Lake Reedsville
-            Sheboygan Sheboygan Falls Sister Bay Sturgeon Bay Two Rivers Valders
-            Waldo Washington Island Whitelaw
-          </p>
-        </div>
-      </section>
     </main>
 
-    <footer class="">
-      <!-- Footer CTA and links -->
-      <section class="grid grid-cols-4">
-        <!-- Generated footer links -->
-        <div class="bg-[#F5F5F5] py-16 px-20 flex flex-col items-start">
-          <label class="text-gray-800 text-xs mb-1.5 inline-block">
-            Contact Us Online
-          </label>
-          <a
-            class="inline-block px-6 py-3 font-semibold text-white rounded-md cursor-pointer  bg-primary hover:opacity-90 mb-7"
-          >
-            Get Your Free Estimate
-          </a>
+    <div class="bg-red-500">asd</div>
 
-          <label class="text-gray-800 text-xs mb-1.5 inline-block">
-            Or call us at
-          </label>
-          <p class="text-3xl font-bold text-gray-800">1-800-379-3788</p>
+    <footer class="footer">
+      <!-- Top Navigation -->
+      <section class="top-footer">
+        <div class="cta-block">
+          <label class="cta-label"> Contact Us Online </label>
+          <a class="button"> Get Your Free Estimate </a>
+
+          <label class="cta-label"> Or call us at </label>
+          <p class="cta-number">1-800-379-3788</p>
         </div>
 
-        <div
-          class="
-            border-r border-[#231F20] border-opacity-25 border-solid
-            py-16
-            px-16
-          "
-        >
-          <h4 class="mb-4 font-bold">Our Services</h4>
-          <div class="flex gap-x-7">
-            <ul>
+        <div class="block">
+          <h4 class="block-title">Our Services</h4>
+          <div class="block-list-container">
+            <ul class="block-list">
               <li>
-                <a class="text-sm cursor-pointer">Basement Waterproofing</a>
+                <a class="block-list-item">Basement Waterproofing</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Foundation Repair</a>
+                <a class="block-list-item">Foundation Repair</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Concrete Leveling</a>
+                <a class="block-list-item">Concrete Leveling</a>
               </li>
             </ul>
-            <ul>
+            <ul class="block-list">
               <li>
-                <a class="text-sm cursor-pointer">Crawl Spaces</a>
+                <a class="block-list-item">Crawl Spaces</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Insulation</a>
+                <a class="block-list-item">Insulation</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Refer a Friend</a>
+                <a class="block-list-item">Refer a Friend</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div
-          class="
-            border-r border-[#231F20] border-opacity-25 border-solid
-            py-16
-            px-16
-          "
-        >
-          <h4 class="mb-4 font-bold">Our Work</h4>
-          <div class="flex gap-x-7">
-            <ul>
+        <div class="block">
+          <h4 class="block-title">Our Work</h4>
+          <div class="block-list-container">
+            <ul class="block-list">
               <li>
-                <a class="text-sm cursor-pointer">Case Studies</a>
+                <a class="block-list-item">Case Studies</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Testimonials</a>
+                <a class="block-list-item">Testimonials</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Customer Reviews</a>
+                <a class="block-list-item">Customer Reviews</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Videos</a>
+                <a class="block-list-item">Videos</a>
               </li>
             </ul>
-            <ul>
+            <ul class="block-list">
               <li>
-                <a class="text-sm cursor-pointer">Photo Galary</a>
+                <a class="block-list-item">Photo Galary</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Before & After</a>
+                <a class="block-list-item">Before & After</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div class="px-16 py-16">
-          <h4 class="mb-4 font-bold">Our Company</h4>
-          <div class="flex gap-x-7">
-            <ul>
+        <div class="block">
+          <h4 class="block-title">Our Company</h4>
+          <div class="block-list-container">
+            <ul class="block-list">
               <li>
-                <a class="text-sm cursor-pointer">About Us</a>
+                <a class="block-list-item">About Us</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Q&A</a>
+                <a class="block-list-item">Q&A</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Affiliations</a>
+                <a class="block-list-item">Affiliations</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Careers</a>
+                <a class="block-list-item">Careers</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Blog</a>
+                <a class="block-list-item">Blog</a>
               </li>
             </ul>
-            <ul>
+            <ul class="block-list">
               <li>
-                <a class="text-sm cursor-pointer">Financing</a>
+                <a class="block-list-item">Financing</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Meet The Team</a>
+                <a class="block-list-item">Meet The Team</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Press Release</a>
+                <a class="block-list-item">Press Release</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Privacy Policy</a>
+                <a class="block-list-item">Privacy Policy</a>
               </li>
               <li>
-                <a class="text-sm cursor-pointer">Sitemap</a>
+                <a class="block-list-item">Sitemap</a>
               </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <!-- Lower Banner -->
-      <section class="text-white flex justify-center py-4 bg-[#231F20]">
-        <span class="inline text-sm text-center"
-          ><span class="text-sm font-semibold">Sure-Dry Basement Systems </span
-          >© 2021
+      <!-- Bottom Banner -->
+      <section class="bottom-footer">
+        <span class="text-span">
+          <span class="text-bold"> Sure-Dry Basement Systems </span>
+          © 2021
         </span>
-        <span class="inline mx-2"> | </span>
-        <span class="inline text-sm text-center">
-          754 W. Airport Road, Menasha, WI 54952
-        </span>
-        <span class="inline mx-2"> | </span>
-        <span class="inline text-sm text-center"
-          >4205 Stewart Ave., Wausau, WI 54401</span
-        >
-        <span class="inline mx-2"> | </span>
-        <span class="inline text-sm text-center">1-800-379-3788</span>
+        <span class="text-separator"> | </span>
+        <span class="text-span"> 754 W. Airport Road, Menasha, WI 54952 </span>
+        <span class="text-separator"> | </span>
+        <span class="text-span">4205 Stewart Ave., Wausau, WI 54401</span>
+        <span class="text-separator"> | </span>
+        <span class="text-span">1-800-379-3788</span>
       </section>
     </footer>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
