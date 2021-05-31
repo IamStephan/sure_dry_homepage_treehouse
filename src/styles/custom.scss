@@ -6,60 +6,11 @@
   @return #{$width * $fration}px;
 }
 
-.navigation-layout {
-  display: grid;
-  grid-template-columns:
-    1fr calculateFractionWidth(0.45, $screen-2xl) calculateFractionWidth(
-      0.55,
-      $screen-2xl
-    )
-    1fr;
-  grid-template-rows: auto auto;
-}
-
-.navigation-start-triangle {
-  position: relative;
-
-  &::before {
-    $triangle-slope: 150;
-    content: "";
-    bottom: 0px;
-    left: #{-$triangle-slope}px;
-    position: absolute;
-    width: #{$triangle-slope}px;
-    height: 100%;
-    background-color: #272526;
-    transform-origin: bottom right;
-    transform: rotate(45deg);
-    z-index: -5;
-  }
-}
-
-.hero-section-layout {
-  display: grid;
-  grid-template-columns:
-    1fr calculateFractionWidth(0.45, $screen-2xl) calculateFractionWidth(
-      0.55,
-      $screen-2xl
-    )
-    1fr;
-  grid-template-rows: auto 1fr 1fr;
-}
-
-.services-card-layout {
-  $desktop-offset-vertical-padding: 64;
-  $desktop-offset-horizontal-padding: 50;
-
-  display: grid;
-  grid-template-columns: #{$desktop-offset-horizontal-padding}px auto 1fr;
-  grid-template-rows: #{$desktop-offset-vertical-padding}px auto #{$desktop-offset-vertical-padding}px;
-}
-
 .features-section-top-card-layout {
   $screen-xl: 1500;
 
   display: grid;
-  grid-template-columns: auto #{$screen-xl}px auto;
+  grid-template-columns: auto minmax(#{$screen-lg}px, #{$screen-xl}px) auto;
   grid-template-rows: 1fr 1fr;
 }
 
