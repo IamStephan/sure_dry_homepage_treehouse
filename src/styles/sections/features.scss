@@ -73,14 +73,16 @@
         background-color: #231f20;
 
         .featured-card-button-text {
-          @apply text-sm font-semibold md:text-xs;
+          @apply text-sm font-semibold
+            md:text-xs;
         }
       }
     }
   }
 
   .featured-body-container {
-    @apply max-w-screen-xl mx-auto mb-16 px-16 md:px-8;
+    @apply max-w-screen-xl mx-auto
+      mb-16 px-16 md:px-8;
 
     .featured-body-text {
       @apply text-2xl font-light leading-loose
@@ -96,7 +98,8 @@
       sm:grid-cols-1 sm:place-items-start;
 
     .feautured-item {
-      @apply grid grid-cols-1 sm:gap-x-2 sm:place-items-center;
+      @apply grid grid-cols-1 sm:gap-x-2
+        sm:place-items-center;
       max-width: 280px;
 
       @screen sm {
@@ -107,17 +110,22 @@
         @apply sm:mr-4;
 
         .featured-item-icon {
-          @apply h-16 mb-4 sm:mb-0 sm:h-auto sm:w-12;
+          @apply h-16 mb-4
+            sm:mb-0 sm:h-auto sm:w-12;
         }
       }
 
       .featured-item-content {
         .featured-item-title {
-          @apply mb-2 text-2xl font-bold md:text-xl sm:text-base sm:mb-0;
+          @apply mb-2 text-2xl font-bold
+            md:text-xl
+            sm:text-base sm:mb-0;
         }
 
         .featured-item-subtitle {
-          @apply text-xl md:text-base sm:text-xs;
+          @apply text-xl
+            md:text-base
+            sm:text-xs;
         }
       }
     }

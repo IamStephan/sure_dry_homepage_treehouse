@@ -19,13 +19,13 @@
 
   .service-areas-map-container {
     @apply relative col-start-1 col-end-3 row-start-1 row-end-3
-    lg:col-start-1 lg:col-end-4 lg:row-start-2 lg:row-end-3;
+      lg:col-start-1 lg:col-end-4 lg:row-start-2 lg:row-end-3;
     z-index: 5;
   }
 
   .service-areas-bg-container {
     @apply relative col-start-2 col-end-5 row-start-1 row-end-3
-    lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-4;
+      lg:col-start-1 lg:col-end-4 lg:row-start-1 lg:row-end-4;
 
     .service-areas-bg-image {
       filter: brightness(0.85);

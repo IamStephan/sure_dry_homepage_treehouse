@@ -16,17 +16,23 @@
   }
 
   .social-proof-content {
-    @apply py-32 lg:py-16 md:py-8;
+    @apply py-32
+      lg:py-16
+      md:py-8;
 
     .social-proof-content-heading {
-      @apply mb-10 text-3xl font-semibold text-center text-white md:text-lg md:mb-8;
+      @apply mb-10 text-3xl font-semibold text-center text-white
+        md:text-lg md:mb-8;
     }
 
     .testimonials-container {
-      @apply flex px-16 overflow-x-hidden flex-nowrap lg:flex-col lg:items-center md:px-8;
+      @apply flex px-16 overflow-x-hidden flex-nowrap
+        lg:flex-col lg:items-center
+        md:px-8;
 
       .testimonial {
-        @apply flex flex-col items-end flex-shrink-0 mr-24 lg:mr-0 lg:mb-12 lg:hidden;
+        @apply flex flex-col items-end flex-shrink-0 mr-24
+          lg:mr-0 lg:mb-12 lg:hidden;
         max-width: 600px;
 
         @screen lg {
@@ -53,22 +59,27 @@
         }
 
         .testimonial-body {
-          @apply z-10 self-stretch px-12 py-8 bg-white sm:px-6 sm:py-5;
+          @apply z-10 self-stretch px-12 py-8 bg-white
+            sm:px-6 sm:py-5;
 
           .testimonial-body-ratings-container {
-            @apply flex mb-6 sm:mb-3;
+            @apply flex mb-6
+              sm:mb-3;
 
             .testimonial-rating {
-              @apply object-contain w-8 h-8 mr-3 md:mr-1 md:w-6 md:h-6;
+              @apply object-contain w-8 h-8 mr-3
+                md:mr-1 md:w-6 md:h-6;
             }
           }
 
           .testimonial-body-review {
-            @apply mb-2 text-lg sm:text-sm;
+            @apply mb-2 text-lg
+              sm:text-sm;
           }
 
           .testimonial-body-customer {
-            @apply text-sm sm:text-xs;
+            @apply text-sm
+              sm:text-xs;
             color: #838383;
           }
         }

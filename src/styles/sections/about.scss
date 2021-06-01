@@ -22,6 +22,7 @@
   }
 
   .about-cta-container {
-    @apply flex justify-center mt-10 md:hidden;
+    @apply flex justify-center mt-10
+      md:hidden;
   }
 }
