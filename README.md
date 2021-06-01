@@ -2,6 +2,11 @@
 
 Converting Sure-Dry's website to new design from Adobe XD design spec
 
+## Prerequisites
+
+- Node JS @latest (Preferable)
+- NPM or Yarn @latest (Preferable)
+
 ## Run Locally
 
 Clone the project
@@ -32,7 +37,7 @@ Start the dev server
   yarn dev
 ```
 
-## Getting usable files
+## Getting distributable files
 
 To retrieve the compiled html and minified CSS and Javascript:
 
@@ -42,23 +47,16 @@ To retrieve the compiled html and minified CSS and Javascript:
   yarn run build
 ```
 
+## Running dist preview server
+
+To retrieve the compiled html and minified CSS and Javascript:
+
+```bash
+  npm run serve
+  # OR
+  yarn run serve
+```
+
 ## Tech Stack
 
-**Client:** React, Redux, TailwindCSS
-
-## Features
-
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
-
-## Reasons for choices
-
-#### Tailwind CSS
-
-Answer 1
-
-#### Vite tool
-
-Answer 2
+**Client:** Vite CLI, Tailwind CSS, Sass
