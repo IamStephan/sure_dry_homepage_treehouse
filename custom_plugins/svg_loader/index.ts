@@ -1,6 +1,7 @@
+//@ts-ignore
 import { getExtractedSVG } from "svg-inline-loader";
 import type { Plugin } from "rollup";
-import fs from "fs";
+import * as fs from "fs";
 
 export const svgLoader: (options?: {
   classPrefix?: string;
