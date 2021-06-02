@@ -1,8 +1,17 @@
 import viteImagemin from "vite-plugin-imagemin";
+import { resolve } from "path";
 
-import { svgLoader } from "./custom_plugins/svg_loader";
+import { svgLoader } from "./custom_plugins/svg_loader/index.js";
 
 export default {
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "./index.html"),
+        content: resolve(__dirname, "./template_pages/content/index.html"),
+      },
+    },
+  },
   plugins: [
     svgLoader(),
     viteImagemin({
