@@ -2,8 +2,19 @@
   Components
   ===========
 */
+@import "../components/absolute_image.scss";
+@import "../components/button.scss";
+@import "../components/section_spacing.scss";
+@import "../components/breadcrumbs.scss";
+@import "../components/accordian.scss";
+@import "../components/list.scss";
+@import "../components/tables.scss";
+@import "../components/floating_card.scss";
 
 /*
   Sections
   ===========
 */
+@import "../sections/content_heading.scss";
+@import "../sections/content_base.scss";
+@import "../sections/service_areas.scss";
