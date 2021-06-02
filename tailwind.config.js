@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./*.html", "./src/**/*.scss"],
+  purge: ["./*.html", "./template_pages/**/*.html", "./src/**/*.scss"],
   mode: "jit",
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -7,6 +7,7 @@ module.exports = {
       sans: ["Montserrat", "sans-serif"],
       serif: ["Montserrat", "serif"],
     },
+
     screens: {
       "3xl": { max: "1919px" },
       // => @media (max-width: 1535px) { ... }
@@ -30,6 +31,18 @@ module.exports = {
       colors: {
         primary: "#c8102e",
         secondary: "#ffd00a",
+        gray: {
+          50: "#f7f7f7",
+          100: "#efefef",
+          200: "#dfdfdf",
+          300: "#cacaca",
+          400: "#a8a8a8",
+          500: "#878787",
+          600: "#6d6d6d",
+          700: "#5f5f5f",
+          800: "#4a4a4a",
+          900: "#3d3d3d",
+        },
       },
     },
   },
