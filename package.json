@@ -2,6 +2,7 @@
   "name": "sure_dry_homepage",
   "version": "0.0.0",
   "scripts": {
+    "plugins": "tsc custom_plugins/**/*.ts",
     "dev": "vite",
     "build": "tsc && vite build",
     "serve": "vite preview"
