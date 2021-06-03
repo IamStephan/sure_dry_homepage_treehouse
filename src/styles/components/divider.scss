@@ -1,0 +1,28 @@
+/*
+  NOTE:
+  ======
+  This should used with `<hr />` since the hr tags represents
+  the end of a previous section and the begining of the next section
+  This is important for SEO and accessibility.
+
+  DO NOT USE `<br />`
+  ==========
+*/
+.divider {
+  @apply clear-both h-16 border-none relative;
+
+  // Increase specificity
+  &.divider.divider {
+    @apply my-0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: theme("colors.gray.200");
+  }
+}
