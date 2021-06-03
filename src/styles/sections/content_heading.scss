@@ -1,0 +1,36 @@
+.content-heading {
+  @apply grid items-center grid-cols-2 px-16 pt-8 mx-auto  gap-x-8 max-w-screen-2xl;
+
+  // When there is no media to be displayed show the headline as centered
+  &.no-media {
+    @apply grid-cols-1;
+
+    .content-heading-headline-container {
+      @apply max-w-xl mx-auto flex flex-col justify-center items-center;
+
+      .content-heading-headline-logo {
+        @apply text-center;
+      }
+
+      .content-heading-headline-text {
+        @apply text-center;
+      }
+    }
+  }
+
+  .content-heading-headline-container {
+    .content-heading-headline-logo {
+      @apply relative w-16 h-16 mb-4;
+    }
+
+    .content-heading-headline-text {
+      @apply mb-8 text-6xl font-bold text-gray-900;
+    }
+  }
+
+  .content-heading-media-container {
+    .content-heading-media {
+      @apply shadow-2xl aspect-w-16 aspect-h-9;
+    }
+  }
+}
