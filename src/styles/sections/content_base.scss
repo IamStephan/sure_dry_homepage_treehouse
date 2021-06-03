@@ -1,0 +1,30 @@
+.content-base {
+  @apply max-w-screen-xl px-16 mx-auto md:px-8 items-start gap-x-16;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+
+  .side-nav {
+    @apply sticky top-8;
+
+    .side-nav-heading {
+      @apply text-primary uppercase font-bold cursor-pointer hover:underline;
+    }
+
+    .side-nav-separator {
+      @apply border-primary my-4;
+    }
+
+    .side-nav-container {
+      .side-nav-item-container {
+        @apply mb-2;
+        .side-nav-item {
+          @apply text-primary cursor-pointer hover:underline;
+        }
+      }
+    }
+  }
+
+  .article {
+    @apply prose md:prose-sm max-w-none;
+  }
+}
