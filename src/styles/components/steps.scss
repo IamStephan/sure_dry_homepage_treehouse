@@ -1,0 +1,18 @@
+.steps-container.steps-container.steps-container {
+  $counter-padding: 20;
+
+  counter-reset: steps-counter;
+  list-style: none;
+  padding-left: #{$counter-padding}px;
+
+  .steps-item {
+    counter-increment: steps-counter;
+    position: relative;
+    @apply mb-6;
+
+    &::before {
+      content: counter(steps-counter);
+      @apply transform -translate-x-1/2 left-0 top-0 text-white bg-primary font-semibold h-7 w-7 rounded-full flex justify-center items-center;
+    }
+  }
+}
