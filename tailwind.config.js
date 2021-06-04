@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./*.html", "./template_pages/**/*.html", "./src/**/*.scss"],
+  purge: ["./*.html", "./template_pages/**/*.html"],
   mode: "jit",
   darkMode: false, // or 'media' or 'class'
   theme: {
