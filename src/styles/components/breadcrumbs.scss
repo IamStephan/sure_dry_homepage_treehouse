@@ -1,0 +1,32 @@
+.breadcrumbs-container.breadcrumbs-container {
+  @apply px-2 py-1 mb-4 text-sm border border-gray-200 rounded-md  bg-gray-50 flex flex-wrap;
+
+  .breadcrumbs-item {
+    @apply mr-1;
+    list-style: none;
+    padding: 0px;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      @apply font-black text-sm mx-1;
+      content: ">";
+    }
+
+    &:last-child::after {
+      content: none;
+    }
+
+    &:last-child {
+      .breadcrumbs-link {
+        @apply text-primary;
+      }
+    }
+
+    .breadcrumbs-link {
+      @apply no-underline text-sm font-medium  hover:underline cursor-pointer;
+    }
+  }
+}
