@@ -1,3 +1,10 @@
-.button {
-  @apply inline-block px-6 py-3 font-semibold text-white rounded-md cursor-pointer bg-primary hover:opacity-90;
+/*
+  NOTE:
+  ======
+  Prose uses semantic tags to style unknown content
+  Therefore, I'm pushing the styles for a button to
+  a higher priority and overriding the semantic styles.
+*/
+.button.button.button.button {
+  @apply inline-block px-6 py-3 font-semibold text-white no-underline rounded-md cursor-pointer bg-primary hover:opacity-90;
 }
