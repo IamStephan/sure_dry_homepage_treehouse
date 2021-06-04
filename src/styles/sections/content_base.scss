@@ -1,10 +1,14 @@
 .content-base {
-  @apply max-w-screen-xl px-16 mx-auto md:px-8 items-start gap-x-16;
+  @apply max-w-screen-xl px-16 mx-auto md:px-8 items-start gap-x-16 gap-y-16;
   display: grid;
   grid-template-columns: 200px 1fr;
 
+  @screen xl {
+    @apply grid-cols-1;
+  }
+
   .side-nav {
-    @apply sticky top-4;
+    @apply sticky top-4 xl:static xl:row-start-2;
 
     .side-nav-heading {
       @apply text-primary uppercase font-bold cursor-pointer hover:underline;
@@ -29,6 +33,16 @@
     // Usefull especially if the content is unknown
     @apply prose md:prose-sm max-w-none;
 
+    // Maybe change?
+    // The text on mobile seems way to big
+    h1 {
+      @apply sm:text-2xl;
+    }
+
+    .floating-image {
+      @apply flex justify-center float-right md:float-none max-w-full h-auto md:ml-0 md:mx-auto md:my-6;
+    }
+
     .responsive-blocks {
       $block-clamp: 300;
       @apply grid gap-x-8;
@@ -42,11 +56,11 @@
     }
 
     .floating-right.floating-right.floating-right {
-      @apply float-right my-0 mx-0 ml-4 mb-4;
+      @apply float-right my-0 mx-0 ml-4 mb-4 md:float-none md:ml-0 md:mx-auto md:my-6;
     }
 
     .showcase-card-video-container {
-      @apply float-right mb-8 ml-8 w-80;
+      @apply w-80 md:w-auto;
 
       .showcase-card-video {
         @apply aspect-w-16 aspect-h-9;
@@ -66,10 +80,17 @@
     }
 
     .related-pages-container {
-      @apply shadow-xl border border-gray-200 bg-gray-50 rounded-md px-8 py-4;
+      @apply shadow-xl border border-gray-200 bg-gray-50 rounded-md px-8 py-4 flex lg:flex-col;
 
-      .related-pages-heading {
-        @apply text-2xl text-primary font-bold;
+      .related-pages-body {
+        @apply flex-1;
+        .related-pages-heading {
+          @apply text-2xl text-primary font-bold;
+        }
+      }
+
+      .related-pages-cta-container {
+        @apply self-end justify-self-end sm:self-center;
       }
     }
   }
