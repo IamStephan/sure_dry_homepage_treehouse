@@ -90,7 +90,7 @@
       }
 
       .related-pages-cta-container {
-        @apply self-end justify-self-end sm:self-center;
+        @apply self-end justify-self-end sm:self-start sm:mt-2;
       }
     }
   }
