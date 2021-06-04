@@ -1,5 +1,5 @@
 .breadcrumbs-container.breadcrumbs-container {
-  @apply px-2 py-1 mb-4 text-sm border border-gray-200 rounded-md  bg-gray-50 flex flex-wrap;
+  @apply px-2 py-1 mb-4 text-sm border border-gray-200 rounded-md bg-gray-50 flex flex-wrap;
 
   .breadcrumbs-item {
     @apply mr-1;
@@ -26,7 +26,7 @@
     }
 
     .breadcrumbs-link {
-      @apply no-underline text-sm font-medium  hover:underline cursor-pointer;
+      @apply no-underline text-sm font-medium hover:underline cursor-pointer;
     }
   }
 }

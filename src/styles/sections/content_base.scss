@@ -1,14 +1,13 @@
 .content-base {
-  @apply max-w-screen-xl px-16 mx-auto md:px-8 items-start gap-x-16 gap-y-16;
+  @apply max-w-screen-xl px-16 mx-auto items-start gap-x-16 gap-y-16
+    xl:grid-cols-1
+    md:px-8;
   display: grid;
   grid-template-columns: 200px 1fr;
 
-  @screen xl {
-    @apply grid-cols-1;
-  }
-
   .side-nav {
-    @apply sticky top-4 xl:static xl:row-start-2;
+    @apply sticky top-4
+      xl:static xl:row-start-2;
 
     .side-nav-heading {
       @apply text-primary uppercase font-bold cursor-pointer hover:underline;
@@ -31,7 +30,8 @@
   .article {
     // Use prose utility to have auto styles for text based content
     // Usefull especially if the content is unknown
-    @apply prose md:prose-sm max-w-none;
+    @apply prose max-w-none
+      md:prose-sm;
 
     // Maybe change?
     // The text on mobile seems way to big
@@ -40,7 +40,8 @@
     }
 
     .floating-image {
-      @apply flex justify-center float-right md:float-none max-w-full h-auto md:ml-0 md:mx-auto md:my-6;
+      @apply flex justify-center float-right max-w-full h-auto
+        md:float-none md:ml-0 md:mx-auto md:my-6;
     }
 
     .responsive-blocks {
@@ -56,11 +57,13 @@
     }
 
     .floating-right.floating-right.floating-right {
-      @apply float-right my-0 mx-0 ml-4 mb-4 md:float-none md:ml-0 md:mx-auto md:my-6;
+      @apply float-right my-0 mx-0 ml-4 mb-4
+        md:float-none md:ml-0 md:mx-auto md:my-6;
     }
 
     .showcase-card-video-container {
-      @apply w-80 md:w-auto;
+      @apply w-8
+        md:w-auto;
 
       .showcase-card-video {
         @apply aspect-w-16 aspect-h-9;
@@ -80,7 +83,8 @@
     }
 
     .related-pages-container {
-      @apply shadow-xl border border-gray-200 bg-gray-50 rounded-md px-8 py-4 flex lg:flex-col;
+      @apply shadow-xl border border-gray-200 bg-gray-50 rounded-md px-8 py-4 flex
+        lg:flex-col;
 
       .related-pages-body {
         @apply flex-1;
@@ -90,7 +94,8 @@
       }
 
       .related-pages-cta-container {
-        @apply self-end justify-self-end sm:self-start sm:mt-2;
+        @apply self-end justify-self-end
+          sm:self-start sm:mt-2;
       }
     }
   }
